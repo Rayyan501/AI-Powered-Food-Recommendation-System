@@ -1,46 +1,37 @@
 # AI-Powered-Food-Recommendation-System
-🔍 Overview
+## 🔍 Overview
+
 Modern diets are often unbalanced due to lack of nutritional awareness and meal planning tools. This system leverages machine learning to help users make healthier choices by:
 
-Predicting the caloric content of foods using a Random Forest Regressor
-Recommending similar foods based on user preferences using K-Means Clustering and Cosine Similarity
-The system is built on a reliable dataset from the USDA (via Kaggle) containing over 5,000 food items with 20+ nutritional attributes.
+- Predicting the caloric content of foods using a **Random Forest Regressor**
+- Recommending similar foods based on user preferences using **K-Means Clustering** and **Cosine Similarity**
 
-🧠 Key Features
-1. Calorie Prediction Model
-Built using Random Forest Regression for high accuracy
-Achieved R² score: 0.9939 , MSE: 171.3 , showing excellent predictive performance
-Trained on macronutrient data including protein, lipids, carbohydrates, fiber, and sugar
-2. Food Recommendation Engine
-Used K-Means Clustering to group foods by nutritional profiles
-Implemented Cosine Similarity to rank and recommend top 20 food items based on user input
-Metrics used: Silhouette Score (0.55) , Davies-Bouldin Index (0.63) , and WCSS
-3. Data Mining Pipeline
-Dataset preprocessing including:
-Missing value handling via median imputation
-Outlier detection using Z-Score
-Feature selection and scaling (Min-Max Normalization , StandardScaler )
-📁 Project Structure
+The system is built on a reliable dataset from the **USDA (via Kaggle)** containing over 5,000 food items with 20+ nutritional attributes.
 
+---
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-AI-Powered-Food-Recommendation-System/
-│
-├── data/                   # USDA food dataset (ABBREV.csv)
-├── models/                 # Trained ML models (Random Forest, K-Means)
-├── notebooks/              # Jupyter Notebooks for EDA and model training
-├── presentation/           # PowerPoint slides (.pptx) explaining the project
-├── src/                    # Python scripts for data processing and recommendation logic
-├── app.py                  # Optional: Flask/FastAPI backend placeholder
-└── README.md               # You're here!
+## 🧠 Key Features
+
+### 1. Calorie Prediction Model
+- Built using **Random Forest Regression** for high accuracy  
+- Achieved **R² score: 0.9939**, **MSE: 171.3**, showing excellent predictive performance  
+- Trained on macronutrient data including: **protein, lipids, carbohydrates, fiber, and sugar**
+
+### 2. Food Recommendation Engine
+- Used **K-Means Clustering** to group foods by nutritional profiles  
+- Implemented **Cosine Similarity** to rank and recommend top 20 food items based on user input  
+- Metrics used:
+  - **Silhouette Score:** 0.55  
+  - **Davies-Bouldin Index:** 0.63  
+  - **WCSS**
+
+### 3. Data Mining Pipeline
+- Dataset preprocessing including:
+  - Missing value handling via **median imputation**
+  - Outlier detection using **Z-Score**
+  - Feature selection and scaling using **Min-Max Normalization** and **StandardScaler**
+
+---
 🚀 Future Work / Full-Stack Integration
 This system can be extended into a full-stack application with:
 
