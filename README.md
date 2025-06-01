@@ -49,6 +49,6 @@ A PowerPoint presentation is included summarizing:
 
 ## ✅ How to Use
 
-1. Run the Jupyter Notebook to explore the data analysis and model training  
-2. Try out the recommendation engine with custom food inputs  
-3. Extend it into a web app using your preferred frontend/backend stack  
+1. Run the all in one Jupyter Notebook to explore the data analysis and model training  
+2. Try out the recommendation system at the end 
+ 
